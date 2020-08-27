@@ -19,7 +19,7 @@ WORKDIR /root/
 COPY --from=0 /go/src/app/webserver .
 
 # 容器向外提供服务的暴露端口
-EXPOSE 9999
+EXPOSE 8080
 
 # 启动服务
 ENTRYPOINT ["./webserver"]
