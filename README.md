@@ -3,7 +3,7 @@
 平时自己学习的话，可能直接在本地构建一个镜像，然后再上传到hub.docker.com就可以了，用的时候在服务器上拉取一下即可。而如果应用比较多的话，况且几十人都这样操作的话，就太浪费时间了，这种办法肯定不合适了，这个时候就需要引入专业的CI集成工具了。  
 目前市面上见的解决方案一般有两种，一种是自行搭建镜像平台，如vmware开源的[harbor](https://github.com/goharbor/harbor), 特点是安全，方便，就是需要一些开支；另一种就是使用免费的服务，如[hub.docker.com](https://hub.docker.com/repositories)和 [aliyun](https://cr.console.aliyun.com/)提供的镜像服务，特点就是方便，特别是个人或者中小企业来说，已经满足了大部分的需求。
 
-本仓库是基于aliyun镜像来完成的一个示例。如果要在k8s中部署的话，则需要考虑到私有镜像登录的情况。
+本仓库是基于aliyun镜像来完成的一个示例。如果要在k8s中部署的话，则需要考虑到私有镜像登录的情况, 参考 [如何支持私有镜像](https://help.aliyun.com/document_detail/53771.html)。
 
 ### 使用说明
 1. 阿里云镜像仓库需要与github进行授权打通，以方便直接从github账号摘取仓库
